@@ -79,7 +79,7 @@ def get_recession_start():
                                     economy_df['Next 2 QT GDP'])
 
     start = economy_df[economy_df['Recession Begin'] == True]
-    return start['Quarter'].values[0]
+    return start['Quarter'].values[1]
 get_recession_start()
 
 
